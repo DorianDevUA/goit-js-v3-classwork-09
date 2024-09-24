@@ -1,0 +1,22 @@
+body {
+  font-family: sans-serif;
+}
+
+button {
+  margin: 10px;
+  font-size: 16px;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.counter {
+  display: flex;
+  background-color: antiquewhite;
+  align-items: center;
+}
+
+.counter>p {
+  margin: 0;
+  font-size: 48px;
+  font-family: monospace;
+}
