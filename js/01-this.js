@@ -107,6 +107,34 @@
 // invokeAction(user.showTag);
 
 /*
+ *"Стрілкові функції"
+ * У стрілочних функцій свого контексту виконання немає.
+ * Вони пов'язуються з найближчим за ієрархією контекстом, де він визначений.
+ * Це зручно, коли нам потрібно передати в стрілочну функцію,
+ * наприклад батьківський контекст без використання bind().
+ */
+
+// function greetWaitAndAgain() {
+//   console.log(`Hello, ${this.name}!`);
+//   setTimeout(() => {
+//     console.log(`Hello again, ${this.name}!`);
+//   }, 1000);
+// }
+
+// const user = { name: 'Alex' };
+
+// user.greetWaitAndAgain = greetWaitAndAgain;
+// user.greetWaitAndAgain();
+
+// // Hello, Alex!
+// // Hello again, Alex!
+
+/*
+ * При використанні звичайної функції всередині контекст би загубився, і щоб досягти
+ * того ж результату, нам би довелося використовувати call(), apply() або bind().
+ */
+
+/*
  * Тренуємося 1
  */
 
